@@ -31,17 +31,17 @@
 
             <li class="nav-item">
                 <a href="{{ route('about') }}" class="nav-link">
-                    <i style="margin-left:5px;" class="fa fa-video"></i>
-                    <p style="margin-left:10px;">
+                    <i class="nav-icon far fa-address-card"></i>
+                    <p>
                         {{ __('Live videos') }}
                     </p>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="{{ route('Statistiques') }}" class="nav-link">
-                    <i style="margin-left:5px;" class="fa fa-chart-line"></i>
+                    <i class="nav-icon far fa-address-card"></i>
                    
-                    <p style="margin-left:10px;">
+                    <p>
                         
                             {{ __('Statistiques ') }}
                     </p>
@@ -50,12 +50,10 @@
             <li class="nav-item">
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
-                    <a href="{{ route('logout') }}" class="dropdown-item nav-link" style="color:rgb(178, 178, 178);"
+                    <a href="{{ route('logout') }}" class="dropdown-item" style="color:rgb(178, 178, 178);"
                        onclick="event.preventDefault(); this.closest('form').submit();">
-                        <i style="margin-left:7px;" class="mr-2 fas fa-sign-out-alt"></i>
-                       
+                        <i class="mr-2 fas fa-sign-out-alt"></i>
                         {{ __('Log Out') }}
-                        
                     </a>
                 </form>
             </li>
